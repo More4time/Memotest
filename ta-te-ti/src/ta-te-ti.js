@@ -39,6 +39,7 @@ function manejarEventos($tablero) {
       turnos++
       
       ganar()
+      
     }
       
 };
@@ -60,11 +61,13 @@ function manejarEventos($tablero) {
     let $cuadro3 = document.querySelector("#cuadro3")
     
     if($cuadro1.classList.contains('rojo') && $cuadro2.classList.contains('rojo') && $cuadro3.classList.contains('rojo')){
-      return "ganaste"
+      console.log("ganaste")
     }
     else{
-      return "perdiste"
+      console.log("Siguiente turno")
     }
   }
+
+  
 
   configurarJuego()
